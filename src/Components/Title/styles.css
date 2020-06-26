@@ -11,7 +11,7 @@
 
 @media (max-width: 750px) {
     .title h1 {
-        font-size: 7.5vw;
-        transform: translate( 0, 120%);
+        font-size: 2rem;
+        transform: translate( 0, 115%);
     }
 }
