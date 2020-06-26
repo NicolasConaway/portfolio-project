@@ -33,7 +33,7 @@
 
 @media (max-width: 750px) { 
     .about__container {
-        transform: translate( 0, 42%);
+        transform: translate( 0, 20%);
     }
     .about__container h1 {
         font-size: 1.75rem;
