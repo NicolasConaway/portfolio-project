@@ -1,0 +1,17 @@
+.title {
+    height: 100vh;
+}
+.title h1 {
+    color: #3d405b;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4.5vw;
+    text-align: center;
+    transform: translate( 0, 100%);
+}
+
+@media (max-width: 750px) {
+    .title h1 {
+        font-size: 7.5vw;
+        transform: translate( 0, 120%);
+    }
+}

@@ -1,0 +1,49 @@
+.projects {
+    height: 100vh;
+}
+.projects__container {
+    transform: translate( 0, 35%);
+}
+.projects h1 {
+    color: #3d405b;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.8vw;
+}
+.thumbnail__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 1%;
+}
+.thumbnail {
+    background-color: #3d405b;
+    width: 40vh;
+    height: 15vh;
+    margin: 8% 2% 2% 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px 0;
+    color: #3d405b;
+}
+.thumbnailName {
+    color: #3d405b;
+    text-align: center;
+    font-size: 1vw;
+}
+
+@media (max-width: 750px) {
+    .projects__container {
+        transform: translate( 0, 31%);
+    }
+    .projects h1 {
+        font-size: 7vw;
+    }
+    .thumbnail {
+        width: 20vh;
+        height: 8vh;
+    }
+    .thumbnailName {
+        font-size: 2.5vw;
+    }
+}
