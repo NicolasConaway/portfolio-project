@@ -13,7 +13,7 @@ class Navbar extends React.Component {
                         to="title"
                         spy={true}
                         smooth={true}
-                        offset={-120}
+                        offset={0}
                         duration={1000}
                         className="navlinks">
                         Home

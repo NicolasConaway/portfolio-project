@@ -1,20 +1,21 @@
 .projects {
     height: 100vh;
-}
-.projects__container {
-    transform: translate( 0, 35%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .projects h1 {
     color: #3d405b;
     text-align: center;
     text-decoration: underline;
-    font-size: 2.8vw;
+    font-size: 2.9rem;
+    margin: 0;
 }
 .thumbnail__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
     margin-top: 1%;
 }
 .thumbnail {
@@ -29,19 +30,21 @@
 .thumbnailName {
     color: #3d405b;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 @media (max-width: 750px) {
-    .projects__container {
-        transform: translate( 0, 20%);
-    }
     .projects h1 {
         font-size: 1.75rem;
+        padding-top: 5%;
+    }
+    .thumbnail__container {
+        margin-top: 3%;
     }
     .thumbnail {
-        width: 20vh;
-        height: 8vh;
+        width: 150px;
+        height: 65px;
+        margin: 8% 0 0 0;
     }
     .thumbnailName {
         font-size: .65rem;
