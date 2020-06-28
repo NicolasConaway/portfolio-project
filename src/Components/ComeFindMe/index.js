@@ -15,18 +15,16 @@ class Social extends React.Component {
                         <a href="https://www.linkedin.com/in/nicolas-conaway/" 
                         className="social__card" 
                         target="_blank"
-                        rel="noopener noreferrer"
-                        alt="Linkedin Logo">
-                            <img src={Linkedin} />
+                        rel="noopener noreferrer">
+                            <img src={Linkedin} alt="Linkedin Logo"/>
                             <p>LinkedIn</p>
                         </a>
 
                         <a href="https://github.com/NicolasConaway" 
                         className="social__card" 
                         target="_blank"
-                        rel="noopener noreferrer"
-                        alt="Github Logo">
-                            <img src={Github} />
+                        rel="noopener noreferrer">
+                            <img src={Github} alt="Github Logo"/>
                             <p>Github</p>
                         </a>
                     </div>
