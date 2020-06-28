@@ -15,7 +15,8 @@ class Social extends React.Component {
                         <a href="https://www.linkedin.com/in/nicolas-conaway/" 
                         className="social__card" 
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        alt="Linkedin Logo">
                             <img src={Linkedin} />
                             <p>LinkedIn</p>
                         </a>
@@ -23,7 +24,8 @@ class Social extends React.Component {
                         <a href="https://github.com/NicolasConaway" 
                         className="social__card" 
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        alt="Github Logo">
                             <img src={Github} />
                             <p>Github</p>
                         </a>
