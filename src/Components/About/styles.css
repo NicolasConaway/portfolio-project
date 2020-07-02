@@ -27,6 +27,19 @@
     text-align: center;
     margin: 2% 8% 0 8%;
 }
+.about a {
+    border: 2px solid #3d405b;
+    margin-top: 2%;
+    color: #3d405b;
+    text-decoration: none;
+    background-color: #81b29a;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.about a:hover {
+    background-color: #78a58f;
+}
 
 @media (max-width: 750px) { 
     .about h1 {
@@ -39,5 +52,12 @@
     .about p {
         font-size: 1.3rem;
         margin: 4% 8% 0 8%;
+    }
+    .about a {
+        border: 2px solid #3d405b;
+        margin-top: 4%;
+        padding: 2%;
+        border-radius: 20px;
+        font-size: .75rem;
     }
 }

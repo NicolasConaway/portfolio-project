@@ -16,7 +16,7 @@ class About extends React.Component {
                     <a href= {Download}
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    download>Download</a>
+                    download>Download My Resume</a>
                 </div>
 
             </>
