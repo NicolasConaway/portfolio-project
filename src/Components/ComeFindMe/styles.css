@@ -27,6 +27,7 @@
     text-decoration: none;
 }
 .social__card img {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 85%;
     margin: 0 auto 0 auto;
     background-color: #3d405b;
@@ -34,7 +35,7 @@
     padding: 2%;
 }
 .social__card img:hover {
-    filter: drop-shadow(100%);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
     background-color: #444763;
 }
