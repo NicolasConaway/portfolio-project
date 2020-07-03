@@ -53,7 +53,7 @@ class Projects extends React.Component {
 
                                                     </div>
 
-                                                    : <img className="thumbnail" src={card.thumbnail}  />}
+                                                    : <img className="thumbnail" src={card.thumbnail} alt={card.name} />}
 
                                             </div>
 
