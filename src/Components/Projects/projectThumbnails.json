@@ -1,6 +1,9 @@
 [
     {
-        "name":"Project 1",
+        "name":"eCommerce (2nd Iteration)",
+        "thumbnail":"./ProjectScreenshots/aYouthsHeartThumbnail.png",
+        "siteLink":"https://youthsheart.netlify.app/",
+        "githubLink":"https://github.com/NicolasConaway/post-ecommerce-2",
         "id": 1
     },
     {
