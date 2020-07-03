@@ -26,6 +26,7 @@ class Projects extends React.Component {
                                             <div
                                                 className="thumbnail__container"
                                                 onClick={() => this.setState({ isThumbnailClicked: true })}>
+
                                                 {thumbnailClicked ?
 
                                                     <div className="model__container">
@@ -33,16 +34,16 @@ class Projects extends React.Component {
                                                         <div className="modelRightLeft">
 
                                                             <a href={card.siteLink}
-                                                            target="_blank" 
-                                                            rel="noopener noreferrer" >
+                                                                target="_blank"
+                                                                rel="noopener noreferrer" >
                                                                 <div className="modelRight">
                                                                     <p>Site</p>
                                                                 </div>
                                                             </a>
 
                                                             <a href={card.githubLink}
-                                                            target="_blank" 
-                                                            rel="noopener noreferrer" >
+                                                                target="_blank"
+                                                                rel="noopener noreferrer" >
                                                                 <div className="modelLeft">
                                                                     <p>Github</p>
                                                                 </div>
@@ -52,7 +53,8 @@ class Projects extends React.Component {
 
                                                     </div>
 
-                                                    : <img className="thumbnail" src={card.thumbnail} alt={card.name} />}
+                                                    : <img className="thumbnail" src={card.thumbnail}  />}
+
                                             </div>
 
                                             <div onClick={() => this.setState({ isThumbnailClicked: false })}>

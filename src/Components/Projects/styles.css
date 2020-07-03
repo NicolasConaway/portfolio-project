@@ -129,11 +129,39 @@
         margin-top: 3%;
     }
     .thumbnail {
-        width: 150px;
-        height: 65px;
+        width: 170px;
+        height: 85px;
         margin: 8% 0 0 0;
     }
     .thumbnailName {
         font-size: .65rem;
+    }
+
+    /* ----------------------------------------------
+    ------------------------------------------------- */
+    .model__container {
+        width: 170px;
+        height: 85px;
+        position: relative;
+        margin: 0;
+        margin: 8% 0 5% 0;
+    }
+    .modelRight,
+    .modelLeft {
+        width: 85px;
+        height: 85px;
+    }
+    .modelRight p,
+    .modelLeft p {
+        font-size: .65rem;
+    }
+    .exit {
+        width: 37px;
+        height: 28.33px;
+    }
+    .rightX, 
+    .leftX {
+        width: 15px;
+        height: 2px;
     }
 }
