@@ -121,9 +121,11 @@
 
 
 @media (max-width: 750px) {
+    .projects {
+        padding: 10% 0 10% 0;
+    }
     .projects h1 {
         font-size: 1.75rem;
-        padding-top: 15%;
     }
     .projects__container {
         margin-top: 3%;
@@ -131,7 +133,7 @@
     .thumbnail {
         width: 170px;
         height: 85px;
-        margin: 8% 0 0 0;
+        margin: 4% 0 0 0;
     }
     .thumbnailName {
         font-size: .65rem;
@@ -144,7 +146,7 @@
         height: 85px;
         position: relative;
         margin: 0;
-        margin: 8% 0 5% 0;
+        margin: 4% 0 0 0;
     }
     .modelRight,
     .modelLeft {
