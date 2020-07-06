@@ -30,15 +30,5 @@
         "name":"Project 6",
         "thumbnail":"./ProjectScreenshots/aYouthsHeartThumbnail.png",
         "id": 6
-    },
-    {
-        "name":"Project 7",
-        "thumbnail":"./ProjectScreenshots/aYouthsHeartThumbnail.png",
-        "id": 7
-    },
-    {
-        "name":"Project 8",
-        "thumbnail":"./ProjectScreenshots/aYouthsHeartThumbnail.png",
-        "id": 8
     }
 ]

@@ -1,27 +1,84 @@
 import React from 'react';
 import './styles.css';
-import projectThumbnails from './projectThumbnails.json';
+
 
 class Model extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            postItem: null
+        }
+    }
+
+    setPostStateOnProps() {
+        const { post } = this.props
+        this.setState({
+            postItem: post
+        })
+    }
+
+    componentDidMount() {
+        this.setPostStateOnProps()
+    }
+
+    state = {
+        isThumbnailClicked: false
+    }
 
     render() {
+
+        const thumbnailClicked = this.state.isThumbnailClicked;
+        const { postItem } = this.state
+
         return (
             <>
+                {postItem !== null ?
+                    <div>
+                        <div className="card__container">
+                            <div
+                                className="thumbnail__container"
+                                onClick={() => this.setState({ isThumbnailClicked: true })}>
 
-                <div className="model__container">
+                                {thumbnailClicked ?
 
-                    <div className="modelRightLeft">
-                        <div className="modelRight">
-                            <a href={projectThumbnails.siteLink}>Site</a>
+                                    <div className="model__container">
+
+                                        <a href={postItem.siteLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer" >
+                                            <div className="modelRight">
+                                                <p>Site</p>
+                                            </div>
+                                        </a>
+
+                                        <a href={postItem.githubLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer" >
+                                            <div className="modelLeft">
+                                                <p>Github</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                    : <img className="thumbnail" src={postItem.thumbnail} alt={postItem.name} />}
+
+                            </div>
+
+                            <div
+                                onClick={() => this.setState({ isThumbnailClicked: false })}
+                                className={thumbnailClicked ? "exit" : "noExit"}>
+
+                                <div className="rightX" />
+                                <div className="leftX" />
+                            </div>
+
                         </div>
-                        <div className="modelLeft">
-                            <a href={projectThumbnails.githubLink}>Github</a>
-                        </div>
+                        <p className="thumbnailName">{postItem.name}</p>
                     </div>
 
-                </div>
-
+                    : ''}
             </>
         )
 

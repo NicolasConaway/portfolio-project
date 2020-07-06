@@ -10,22 +10,30 @@
     text-align: center;
     text-decoration: underline;
     font-size: 2.9rem;
-    margin: 0;
+    margin: 4% 0 0 0;
 }
 .projects__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 1%;
+}
+.saveMe {
+    margin: 1% 2%;
+    width: 25%;
 }
 .thumbnail {
     background-color: #3d405b;
-    width: 40vh;
-    height: 18vh;
-    margin: 0 0 0 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px 0;
+    width: 100%;
+    height: 25vh;
     cursor: pointer;
+    display: block;
+}
+.thumbnail:hover {
+    filter: brightness(70%);
 }
 .thumbnailName {
     color: #3d405b;
@@ -36,24 +44,17 @@
      position: relative;
 }
 
-
 /* ----------------------------------------------
 ------------------------------------------------- */
 .model__container {
-    background-color: #3d405b;
-    width: 40vh;
-    height: 18vh;
     border-radius: 15px 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    position: relative;
-    margin: 0;
-}
-.modelRightLeft {
     display: flex;
 }
-.modelRightLeft a {
+.model__container a {
     color: #3d405b;
     text-decoration: none;
+    
 }
 .modelRight {
     background-color: #e07a5f;
@@ -67,8 +68,8 @@
 }
 .modelRight,
 .modelLeft {
-    width: 20vh;
-    height: 18vh;
+    width: 12.35vw;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,11 +89,11 @@
     display: none
 }
 .exit {
-    width: 8vh;
+    width: 4.5vw;
     height: 6vh;
     background-color: #3d405b;
     bottom: 0;
-    left: 40%;
+    left: 41%;
     border-radius: 50% 50% 0 0;
     position: absolute;
     cursor: pointer;
@@ -103,10 +104,10 @@
 }
 .rightX, 
 .leftX {
-    width: 3vh;
+    width: 1.9vw;
     height: .4vh;
     background-color: #f4f1de;
-    left: 30%;
+    left: 29.5%;
     top: 50%;
     position: absolute;
     border-radius: 40%;
@@ -121,19 +122,18 @@
 
 
 @media (max-width: 750px) {
-    .projects {
-        padding: 10% 0 10% 0;
-    }
     .projects h1 {
         font-size: 1.75rem;
     }
     .projects__container {
         margin-top: 3%;
     }
+    .saveMe {
+        width: 175px;
+        margin: 3% 2%;
+    }
     .thumbnail {
-        width: 170px;
         height: 85px;
-        margin: 4% 0 0 0;
     }
     .thumbnailName {
         font-size: .65rem;
@@ -141,16 +141,9 @@
 
     /* ----------------------------------------------
     ------------------------------------------------- */
-    .model__container {
-        width: 170px;
-        height: 85px;
-        position: relative;
-        margin: 0;
-        margin: 4% 0 0 0;
-    }
     .modelRight,
     .modelLeft {
-        width: 85px;
+        width: 86.5px;
         height: 85px;
     }
     .modelRight p,
